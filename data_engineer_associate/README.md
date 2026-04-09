@@ -3,6 +3,42 @@ https://www.databricks.com/learn/certification/data-engineer-associate
 
 - target date: 2025/7/13
 
+## 本資料で比較している対象
+
+本資料は、Snowflake と Databricks の製品全体を比較するものではなく、  
+AI・BI・agent 活用に関わる主要機能と、その組み合わせ方を比較したものである。
+
+比較にあたっては、「ほぼ1対1で対応づけられる機能」と「ユースケース単位で組み合わせる機能」を分けて整理し、  
+何を早く実現したいか、どこまで作り込みたいか、という実務上の観点を含めて評価している。
+
+なお、成熟度はベンダー単位ではなく、各行ごとに GA / Preview / Mixed を付与している。
+
+
+## 主要用語の注釈（一言説明）
+
+### Snowflake 側
+- **Semantic Views**：業務指標や関係性を含めて定義する Snowflake の semantic object
+- **Cortex Analyst**：自然言語から SQL を生成して分析する Snowflake の機能
+- **Cortex Search**：RAG や検索型AIに使える Snowflake のベクトル検索 / retrieval 機能
+- **Cortex Agents**：Snowflake 上の各種機能やツールを組み合わせて agent を構成する機能
+- **Cortex AI Functions / AI SQL**：SQL や Python から LLM / AI 推論を呼び出す Snowflake の機能群
+- **Document AI / AI_PARSE_DOCUMENT**：文書から情報抽出や構造化を行う Snowflake の機能
+- **AI Observability**：AI / agent 実行の可視化・監視・評価を支援する Snowflake の機能
+- **Snowflake-managed MCP server**：Snowflake 資産やツールを MCP 経由で公開する Snowflake の機能
+
+### Databricks 側
+- **Metric Views**：KPI や指標を一貫して定義・再利用する Databricks の governed metrics 機能
+- **Genie**：自然言語でデータに質問し、分析結果を得る Databricks の AI / BI 機能
+- **Genie knowledge store**：Genie の回答精度を改善するための知識・文脈管理機能
+- **AI Functions / ai_query**：SQL から LLM / モデル / agent を呼び出せる Databricks の機能
+- **Mosaic AI Vector Search**：RAG や検索型AI向けの Databricks のベクトル検索機能
+- **MLflow Tracing**：LLM / agent の実行過程を追跡する Databricks / MLflow の tracing 機能
+- **mlflow.genai.evaluate**：LLM / agent の出力を評価するための Databricks / MLflow の評価機能
+- **Databricks Apps**：作成した AI / データアプリを配備・公開する Databricks のアプリ提供機能
+- **AI Playground**：GUI ベースで AI / agent を試作・検証できる Databricks の環境
+- **Managed MCP / External MCP / Custom MCP**：Databricks 上で MCP によりツールや外部接続を構成する仕組み
+- **Agent Framework**：Databricks 上で agent を構成・接続・運用するための枠組み
+
 # Snowflake × Databricks
 
 # 比較カテゴリーの説明一覧
